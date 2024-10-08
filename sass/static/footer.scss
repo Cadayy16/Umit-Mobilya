@@ -1,0 +1,110 @@
+footer {
+    background-color: $third-color;
+    padding: 50px 0;
+
+    .logo {
+        margin-bottom: 20px;
+
+        img {
+            filter: invert(1);
+            height: 100px;
+        }
+    }
+
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            i {
+                color: $fourth-color;
+            }
+
+            address {
+                color: $fourth-color;
+                margin-bottom: 0;
+            }
+
+            a {
+                color: #ccc;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    h4 {
+        color: $primary-color;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    p {
+        color: $fourth-color;
+        margin-bottom: 15px;
+    }
+
+    form {
+        margin-bottom: 20px;
+
+        #submit {
+            display: none;
+        }
+
+        .input-flex {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; // Flex öğeleri sola hizala
+            border-bottom: 1px solid $fourth-color;
+        
+            input[type="email"],
+            input[type="text"] {
+                flex: 1;
+                padding: 10px;
+                border: none;
+                outline: none;
+                color: white;
+                background-color: transparent;
+            }
+
+            .send-button {
+                cursor: pointer;
+                margin-left: 10px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    .social-links {
+        display: flex;
+        align-items: center;
+
+        li {
+            margin-bottom: 0 !important;
+
+            a {
+                i {
+                    font-size: 25px;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+    }
+}
